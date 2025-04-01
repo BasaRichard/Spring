@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/sys
+    username: root
+    password: jelszo
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: update  # vagy create / validate / none
+    show-sql: true  # Ha látni akarod az SQL lekérdezéseket
